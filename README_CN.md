@@ -6,6 +6,20 @@
 
 **[DEMO](https://rivens.bronya.moe/)**
 
+## 本地测试方法[by tgl]
+
+如果无法直接打开，可用vscode打开index.html，然后点击右下角go live
+
+如果将`'preLoadMotion'`设为true，国内网络，加载需要14秒；国外网络，加载需要13秒
+
+如果设为false，则1秒加载
+
+```json
+'preLoadMotion': false,  // 是否预载动作数据，只对 model3 模型有效，不预载可以提高 model3 模型的加载速度，但可能导致首次触发动作时卡顿
+```
+
+
+
 ## 特性
 
 - 基于 Cubism SDK 2.1 和 Cubism SDK 4，支持包括 model3 在内的目前全部版本的 Live2D 模型
